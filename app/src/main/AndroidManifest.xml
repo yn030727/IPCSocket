@@ -16,10 +16,14 @@
         android:theme="@style/Theme.IPCSocket"
         tools:targetApi="31">
         <service
+            android:name=".BinderPoolSaervice"
+            android:enabled="true"
+            android:exported="true"></service>
+        <service
             android:name=".TCPServerService"
             android:enabled="true"
             android:exported="true"
-            android:process=":remote"></service>
+            android:process=":remote" />
 
         <activity
             android:name=".MainActivity"
